@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Radio buttons, checkboxes</h1>
+    <hr />
+    <!-- This is action does not exist -->
+    <form action="/birds">
+      <!-- Checkboxes -->
+      <input type="checkbox" name="agree_tos" id="agree" checked />
+      <label for="agree">I agree to TOS</label>
+      <p>
+        <label for="s">S:</label>
+        <input type="radio" name="size" id="s" value="Small" />
+        <label for="m">M:</label>
+        <input type="radio" name="size" id="m" value="Medium" />
+        <label for="l">L:</label>
+        <input type="radio" name="size" id="l" value="Large" />
+      </p>
+      <p>
+        <label for="meal">Please select an entree</label>
+        <select name="meal" id="meal">
+          <option value="">Select the meal type</option>
+          <option value="fish">Fish</option>
+          <option value="veg">Vegetarian</option>
+          <option value="steak">steak</option>
+        </select>
+      </p>
+      <p>
+        <label for="cheese">Amount of cheese</label>
+        <input
+          type="range"
+          id="cheese"
+          name="cheese"
+          min="1"
+          max="100"
+          step="2"
+          value="75"
+        />
+      </p>
+      <p>
+        <label for="age">Enter age</label>
+        <input type="number" name="age" id="age" min="1" max="100" />
+      </p>
+      <p>
+        <label for="requests">Any special requests?</label>
+        <br />
+        <br />
+        <textarea
+          name="Requests"
+          id="requests"
+          cols="30"
+          rows="1"
+          placeholder="Type your requests"
+        ></textarea>
+      </p>
+      <button>Submit</button>
+
+      <h2>Validations demo</h2>
+      <form action="/dummy">
+        <label for="first">Enter first name</label>
+        <input type="text" name="first" id="first" required />
+        <p>
+          <label for="username">Username</label>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            minlength="5"
+            maxlength="12"
+            required
+          />
+        </p>
+        <button>Submit the validation</button>
+        <p>
+          <!-- <input type="email" required /> -->
+          <input type="url" />
+        </p>
+      </form>
+    </form>
+  </body>
+</html>
