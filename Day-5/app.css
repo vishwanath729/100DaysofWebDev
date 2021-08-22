@@ -1,0 +1,17 @@
+/*Universal selector*/
+* {
+  color: pink;
+  background-color: black;
+}
+
+/*Element selector*/
+button {
+  font-size: 30px;
+}
+
+/*Selector list*/
+
+h1,
+h2 {
+  color: aliceblue;
+}
